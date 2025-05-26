@@ -107,3 +107,94 @@ The things present in the world
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reels - The Real World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    header {
+      background: #000;
+      color: red;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: red;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .reel {
+      border: 2px solid red;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #000;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 10px 20px;
+      text-align: center;
+      color: #444;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Real World</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reels.html">Reels</a>
+    <a href="post.html">Post</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="reels-grid">
+  <div class="reel">
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+  </div>
+  <div class="reel">
+    <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
+  </div>
+  <div class="reel">
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+  </div>
+  <!-- Add more video reels below -->
+</main>
+
+<footer>
+  Owned by Dhruv Tiwari
+</footer>
+
+</body>
+</html>
