@@ -293,3 +293,125 @@ The things present in the world
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - The Real World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #000;
+      color: red;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: red;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .login-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .login-box {
+      border: 2px solid red;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      background: #f9f9f9;
+    }
+    .login-box h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .login-box button {
+      width: 100%;
+      background: red;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: darkred;
+    }
+    footer {
+      padding: 10px 20px;
+      text-align: center;
+      color: #444;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Real World</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reels.html">Reels</a>
+    <a href="post.html">Post</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="login(event)">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  Owned by Dhruv Tiwari
+</footer>
+
+<script>
+  function login(e) {
+    e.preventDefault();
+    alert("Login system is not connected yet.");
+  }
+</script>
+
+</body>
+</html>
